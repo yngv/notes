@@ -42,7 +42,7 @@ function App() {
         </Route>
 
         <Route path="/detail/:id" >
-          <Detail notes={notes} />
+          <Detail notes={notes} setNotes={setNotes} />
         </Route>
 
       </Switch>

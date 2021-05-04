@@ -1,8 +1,3 @@
-.bg{
-  width: 100vw;
-  height: 100vh;
-  background: rgb(221, 218, 218) ;
-}
 
 header {
   width: 100%;
@@ -33,9 +28,12 @@ header {
   border: 1px solid rgb(160, 157, 5)
 }
 .note h1 {
+  text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   overflow-wrap: break-word;
+  height: 30px;
+  overflow-y: hidden;
 }
 
 
@@ -87,10 +85,13 @@ header a {
 /* DETAIL */
 
 .detailContainer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
+  overflow: hidden;
+
 }
 
 .detailNote{
@@ -100,17 +101,35 @@ header a {
   width: 600px;
   height: 600px;
   background-color: yellow;
+  padding: 20px;
 }
 
 .detailTitle {
   font-weight: 700;
+  width: 560px;
+  margin-bottom: 20px;
+  text-align: center;
   text-transform: uppercase;
-  margin: 20px;
   overflow-wrap: break-word;
 }
 
-.detailContent {
+.detailContent p {
   font-weight: 100;
   overflow-wrap: break-word;
   overflow-y: hidden;
+  width: 560px;
+  text-align: center;
+}
+
+.editor {
+  position: absolute;
+  top: 0;
+  right: 320px;
+}
+
+
+.done{
+  position: absolute;
+  top: 25px;
+  right: 320px;
 }
