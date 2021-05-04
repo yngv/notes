@@ -90,7 +90,7 @@ header a {
   align-items: center;
   justify-content: center;
   margin: 20px;
-  overflow: hidden;
+  overflow-x: hidden;
 
 }
 
@@ -102,6 +102,11 @@ header a {
   height: 600px;
   background-color: yellow;
   padding: 20px;
+  overflow: hidden;
+}
+
+.detailNote img {
+  max-width: 400px;
 }
 
 .detailTitle {
@@ -116,7 +121,7 @@ header a {
 .detailContent p {
   font-weight: 100;
   overflow-wrap: break-word;
-  overflow-y: hidden;
+  overflow: hidden;
   width: 560px;
   text-align: center;
 }

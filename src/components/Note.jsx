@@ -6,7 +6,7 @@ const Note = (props) => {
     }
 
     return (
-        <div className="note" onClick={handleRedirect}>
+        <div className="note" onClick={handleRedirect} title="click to visualize or edit">
             <h1>{props.title}</h1>
             <p>{props.content}</p>
             <div className="close"></div>
