@@ -19,9 +19,10 @@ const Detail = (props) => {
 
     const handleContentEdit = (e) => {
         console.log(e.target.textContent)
-        props.notes.map(el => {
+        props.notes.map((el, index) => {
             if (Number(el.id) === Number(id)) {
                 el.content = e.target.textContent
+                // console.log(index)
             }
         })
     }
@@ -40,7 +41,7 @@ const Detail = (props) => {
                                 <div className="detailContent" onInput={handleContentEdit} contentEditable={edit}>
                                     <p>{el.content}</p>
                                 </div>
-                                <div className="editor" onClick={handleEdit}>E</div>
+                                <div className="editor" title="click to edit note" onClick={handleEdit}><i class="fas fa-edit"></i></div>
                             </div>
 
                         </div>

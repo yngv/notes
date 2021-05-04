@@ -124,9 +124,13 @@ header a {
 .editor {
   position: absolute;
   top: 0;
-  right: 320px;
+  right: 335px;
 }
 
+.editor:hover {
+  cursor: pointer;
+  color: rgb(104, 224, 104);
+}
 
 .done{
   position: absolute;
